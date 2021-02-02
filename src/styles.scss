@@ -1,0 +1,146 @@
+@import "~ng-uikit-pro-standard/assets/scss/core/colors";
+@import "~ng-uikit-pro-standard/assets/scss/core/variables";
+@import "~ng-uikit-pro-standard/assets/scss/core/variables-pro";
+@import "~ng-uikit-pro-standard/assets/scss/addons-pro/_blog-pro.scss";
+@import "~ng-uikit-pro-standard/assets/scss/addons-pro/_ecommerce-pro.scss"; // Import only when you want to use the Products examples
+@import "~ng-uikit-pro-standard/assets/scss/sections-pro/_contacts-pro.scss";
+
+.top-nav-collapse {
+  background-color: #243a51 !important;
+
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+
+@media (max-width: 768px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #243a51 !important;
+  }
+}
+
+h1 {
+  letter-spacing: 8px;
+}
+
+h5 {
+  letter-spacing: 3px;
+}
+
+.hr-light {
+  border-top: 3px solid #fff;
+  width: 80px;
+}
+
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #F5F5F5;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+  background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#5ee7df), to(#b490ca));
+  background-image: -webkit-linear-gradient(bottom, #5ee7df 0%, #b490ca 100%);
+  background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+}
+
+.container {
+  @media (min-width: 576px) {
+    max-width: 540px;
+
+  }
+
+  @media (min-width: 768px) {
+    max-width: 720px;
+
+  }
+
+  @media (min-width: 992px) {
+    max-width: 960px;
+
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1140px;
+
+  }
+
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+.navbar {
+  .container {
+    min-width: 100%;
+  }
+}
+
+.card-footer {
+  background-color: transparent;
+}
+
+mdb-icon {
+  &.grow {
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+}
+
+// Section v4 image properties
+.image-properties {
+  max-width: 100%;
+  height: auto;
+}
+
+.figure-caption {
+  color: black;
+}
+
+@mixin dotAnims($color) {
+  position: relative;
+  display: inline-block;
+  background: $color;
+  border-radius: 0;
+  width: 0.625rem;
+  height: 0.625rem;
+  margin: 0.3125rem;
+
+  -webkit-animation-name: bounceAnimation;
+  animation-name: bounceAnimation;
+  -webkit-animation-duration: 1.2s;
+  animation-duration: 1.2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+
+  &:nth-child(1) {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+  }
+
+  &:nth-child(2) {
+    -webkit-animation-delay: 0.14s;
+    animation-delay: 0.14s;
+  }
+
+  &:nth-child(3) {
+    -webkit-animation-delay: 0.28s;
+    animation-delay: 0.28s;
+  }
+}

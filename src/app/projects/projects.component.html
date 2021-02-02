@@ -1,0 +1,476 @@
+<!--Section: Products v.5-->
+<section class="section text-center container wow fadeInRight" data-wow-delay="0.3s" id="projects">
+  <!--Section heading-->
+  <h2 class="h1 py-5">Project Overview</h2>
+  <!--Section description-->
+  <p class="section-description mb-0">
+    Below is some of my best work that I have done till now.</p>
+  <!--Carousel Wrapper-->
+  <mdb-carousel [isControls]="true" class="carousel-multi-item multi-animation" [animation]="'slide'"
+    [type]="'carousel-multi-item'">
+    <!--First slide-->
+    <mdb-slide>
+      <div class="col-md-4">
+
+        <!--Card-->
+        <mdb-card cascade="true" narrower="true" class="card-ecommerce">
+          <!--Card image-->
+          <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+            <mdb-card-img src="/assets/images/GraphQL.png" alt="graph ql"></mdb-card-img>
+            <a>
+              <div class="mask waves-effect waves-light"></div>
+            </a>
+          </div>
+          <!--/.Card image-->
+
+          <!--Card content-->
+          <mdb-card-body cascade="true" class="text-center no-padding">
+            <!--Category & Title-->
+            <a href="" class="text-muted">
+              <h5>GraphQL</h5>
+            </a>
+            <mdb-card-title>
+              <h4 class="card-title my-4">
+                <strong>
+                  Lyrics App </strong>
+              </h4>
+            </mdb-card-title>
+            <!--Description-->
+            <mdb-card-text>
+              React JS based Single Page Application which uses GraphQL
+              to manage Lyrics of a Song.
+            </mdb-card-text>
+
+            <!--Card footer-->
+            <div class="card-footer">
+              <a href="#graph" mdbPageScroll [pageScrollOffset]="90" [pageScrollDuration]="500"><button
+                  claas="text-center" mdbBtn color="git" type="button" gradient="blue" size="sm" rounded="true"
+                  mdbWavesEffect>View
+                  More</button> <a type="button" (click)="goToLyricsApp()" mdbTooltip="Navigate to Github"
+                  placement="bottom" class="icons-sm mr-8 git-ic">
+                  <mdb-icon class="grow" fab icon="github"></mdb-icon>
+                </a>
+              </a>
+            </div>
+          </mdb-card-body>
+          <!--/.Card content-->
+        </mdb-card>
+        <!--/.Card-->
+      </div>
+
+      <div class="col-md-4 clearfix d-none d-md-block">
+
+        <!--Card-->
+        <mdb-card cascade="true" narrower="true" class="card-ecommerce">
+
+          <!--Card image-->
+
+          <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+            <mdb-card-img src="/assets/images/Tableau.PNG" alt="tableu"></mdb-card-img>
+            <a>
+              <div class="mask waves-effect waves-light"></div>
+            </a>
+          </div>
+          <!--/.Card image-->
+
+          <!--Card content-->
+          <mdb-card-body cascade="true" class="text-center no-padding">
+            <!--Category & Title-->
+            <a href="" class="text-muted">
+              <h5>Tableau</h5>
+            </a>
+            <mdb-card-title>
+              <h4 class="card-title my-4">
+                <strong>
+                  Tableu Dashboard </strong>
+              </h4>
+            </mdb-card-title>
+            <!--Description-->
+            <mdb-card-text>
+              Do check out my Tableau Dashboards on Non-Immigrant Visas (H1B)
+              and Motor-Vehicle crashes in NYC from 2012-2014.
+            </mdb-card-text>
+
+            <!--Card footer-->
+            <div class="card-footer">
+              <button claas="text-center" mdbBtn type="button" gradient="blue" size="sm" rounded="true"
+                mdbWavesEffect>Visit Here</button>
+            </div>
+          </mdb-card-body>
+          <!--/.Card content-->
+
+        </mdb-card>
+        <!--/.Card-->
+
+      </div>
+
+      <div class="col-md-4 clearfix d-none d-md-block">
+
+        <mdb-card cascade="true" narrower="true" class="card-ecommerce">
+
+          <!--Card image-->
+          <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+            <mdb-card-img src="/assets/images/construction.jpg" alt="coming up"></mdb-card-img>
+            <a>
+              <div class="mask waves-effect waves-light"></div>
+            </a>
+          </div>
+          <!--/.Card image-->
+
+          <!--Card content-->
+          <mdb-card-body cascade="true" class="text-center no-padding">
+            <!--Category & Title-->
+            <a href="" class="text-muted">
+              <h5>Under Construction</h5>
+            </a>
+            <mdb-card-title>
+              <h4 class="card-title my-4">
+                <strong>
+                  Coming Soon </strong>
+              </h4>
+            </mdb-card-title>
+
+            <!--Description-->
+            <mdb-card-text>
+              Watch this space for some more exciting stuff!
+            </mdb-card-text>
+            <!--Card footer-->
+            <div class="card-footer">
+              <span class="right">
+                <!--<a href="#top-section" -->
+                <p class="indigo-text">We'll be back</p>
+                <!--</a>-->
+              </span>
+            </div>
+
+          </mdb-card-body>
+          <!--/.Card content-->
+        </mdb-card>
+        <!--/.Card-->
+      </div>
+    </mdb-slide>
+    <!--/First slide-->
+    <!--Second slide-->
+    <mdb-slide>
+      <div class="col-md-4">
+
+        <!--Card-->
+        <mdb-card cascade="true" narrower="true" class="card-ecommerce">
+
+          <!--Card image-->
+          <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+            <mdb-card-img src="/assets/images/react.png" alt="react js"></mdb-card-img>
+            <a>
+              <div class="mask waves-effect waves-light"></div>
+            </a>
+          </div>
+          <!--/.Card image-->
+
+          <!--Card content-->
+          <mdb-card-body cascade="true" class="text-center no-padding">
+            <!--Category & Title-->
+            <a href="" class="text-muted">
+              <h5>React JS</h5>
+            </a>
+            <mdb-card-title>
+              <h4 class="card-title my-4">
+                <strong>
+                  Expense App </strong>
+              </h4>
+            </mdb-card-title>
+            <!--Description-->
+            <mdb-card-text>
+              React JS base SPA which allows a User to add or modify their expense.
+              Authentication and Data Persistence is provided by Firebase.
+            </mdb-card-text>
+            <!--Card footer-->
+            <div class="card-footer">
+              <a href="#expense" mdbPageScroll [pageScrollOffset]="90" [pageScrollDuration]="500"><button
+                  claas="text-center" mdbBtn color="git" type="button" gradient="blue" size="sm" rounded="true"
+                  mdbWavesEffect>Visit
+                  Here</button> <a type="button" (click)="goToExpenseApp()" mdbTooltip="Navigate to Github"
+                  placement="bottom" class="icons-sm mr-8 git-ic">
+                  <mdb-icon class="grow" fab icon="github"></mdb-icon>
+                </a>
+              </a>
+            </div>
+          </mdb-card-body>
+          <!--/.Card content-->
+
+        </mdb-card>
+        <!--/.Card-->
+
+      </div>
+
+      <div class="col-md-4 clearfix d-none d-md-block">
+
+        <!--Card-->
+        <mdb-card cascade="true" narrower="true" class="card-ecommerce">
+
+          <!--Card image-->
+          <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+            <mdb-card-img src="/assets/images/angular.jpg" alt="angular"></mdb-card-img>
+            <a>
+              <div class="mask waves-effect waves-light"></div>
+            </a>
+          </div>
+          <!--/.Card image-->
+
+          <!--Card content-->
+          <mdb-card-body cascade="true" class="text-center no-padding">
+            <!--Category & Title-->
+            <a href="" class="text-muted">
+              <h5>Angular</h5>
+            </a>
+            <mdb-card-title>
+              <h4 class="card-title my-4">
+                <strong>
+                  Contact Form </strong>
+              </h4>
+            </mdb-card-title>
+            <!--Description-->
+            <mdb-card-text>
+              Serverless Contact from, based on Firebase’s Cloud Functions, Storage, and Angular 5.
+              Form validations and Toasts are also provided.
+            </mdb-card-text>
+            <!--Card footer-->
+            <div class="card-footer">
+              <a href="#aform" mdbPageScroll [pageScrollOffset]="90" [pageScrollDuration]="1000"><button
+                  claas="text-center" mdbBtn color="git" type="button" gradient="blue" size="sm" rounded="true"
+                  mdbWavesEffect>Visit
+                  Here</button> <a type="button" (click)="goToAngularApp()" mdbTooltip="Navigate to Github"
+                  placement="bottom" class="icons-sm mr-8 git-ic">
+                  <mdb-icon class="grow" fab icon="github"></mdb-icon>
+                </a>
+              </a>
+            </div>
+
+          </mdb-card-body>
+          <!--/.Card content-->
+
+        </mdb-card>
+        <!--/.Card-->
+
+      </div>
+
+      <div class="col-md-4 clearfix d-none d-md-block">
+
+        <!--Card-->
+        <mdb-card cascade="true" narrower="true" class="card-ecommerce">
+
+          <!--Card image-->
+          <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+            <mdb-card-img src="/assets/images/recipe.jpg" alt="recipe “app"></mdb-card-img>
+            <a>
+              <div class=" mask waves-effect waves-light">
+              </div>
+            </a>
+          </div>
+          <!--/.Card image-->
+
+          <!--Card content-->
+          <mdb-card-body cascade="true" class="text-center no-padding">
+            <!--Category & Title-->
+            <a href="" class="text-muted">
+              <h5>Angular</h5>
+            </a>
+            <mdb-card-title>
+              <h4 class="card-title my-4">
+                <strong>
+                  Recipe Ingredient </strong>
+              </h4>
+            </mdb-card-title>
+            <!--Description-->
+            <mdb-card-text>
+              Angular SPA in which a User can manage Recipes and Ingredients.
+              The app uses Angular’s Routing and HttpClient effectively.
+
+            </mdb-card-text>
+            <!--Card footer-->
+            <div class="card-footer">
+              <a href="#recipe" mdbPageScroll [pageScrollOffset]="90" [pageScrollDuration]="100"><button
+                  claas="text-center" mdbBtn color="git" type="button" gradient="blue" size="sm" rounded="true"
+                  mdbWavesEffect>Visit
+                  Here</button> <a type="button" (click)="goToRecipeIngredientApp()" mdbTooltip="Navigate to Github"
+                  placement="bottom" class="icons-sm mr-8 git-ic">
+                  <mdb-icon class="grow" fab icon="github"></mdb-icon>
+                </a>
+              </a>
+            </div>
+          </mdb-card-body>
+          <!--/.Card content-->
+
+        </mdb-card>
+        <!--/.Card-->
+
+      </div>
+    </mdb-slide>
+    <!--Third slide-->
+    <mdb-slide>
+      <div class="col-md-4">
+
+        <!--Card-->
+        <mdb-card cascade="true" narrower="true" class="card-ecommerce">
+
+          <!--Card image-->
+          <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+            <mdb-card-img src="/assets/images/nodechat1.PNG" alt="node chat app"></mdb-card-img>
+            <a>
+              <div class="mask waves-effect waves-light"></div>
+            </a>
+          </div>
+          <!--/.Card image-->
+
+          <!--Card content-->
+          <mdb-card-body cascade="true" class="text-center no-padding">
+            <!--Category & Title-->
+            <a href="" class="text-muted">
+              <h5>Node JS</h5>
+            </a>
+            <mdb-card-title>
+              <h4 class="card-title my-4">
+                <strong>
+                  Node Chat App</strong>
+              </h4>
+            </mdb-card-title>
+            <!--Description-->
+            <mdb-card-text>
+              Node Chat Application based on Socket.IO.
+              Access <a href="https://glacial-sierra-66119.herokuapp.com/">here.</a>
+
+
+
+            </mdb-card-text>
+            <!--Card footer-->
+            <div class="card-footer">
+              <a href="#chat" mdbPageScroll [pageScrollOffset]="100" [pageScrollSpeed]="2500"><button
+                  claas="text-center" mdbBtn type="button" color="git" gradient="blue" size="sm" rounded="true"
+                  mdbWavesEffect>Visit
+                  Here</button> <a type="button" (click)="goToChatApp()" mdbTooltip="Navigate to Github"
+                  placement="bottom" class="icons-sm mr-8 git-ic">
+                  <mdb-icon class="grow" fab icon="github"></mdb-icon>
+                </a>
+              </a>
+            </div>
+          </mdb-card-body>
+          <!--/.Card content-->
+
+        </mdb-card>
+        <!--/.Card-->
+
+      </div>
+
+      <div class="col-md-4 clearfix d-none d-md-block">
+
+        <!--Card-->
+        <mdb-card cascade="true" narrower="true" class="card-ecommerce">
+
+          <!--Card image-->
+          <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+            <mdb-card-img src="/assets/images/Spark.png" alt="apache spark"></mdb-card-img>
+            <a>
+              <div class="mask waves-effect waves-light"></div>
+            </a>
+          </div>
+          <!--/.Card image-->
+
+          <!--Card content-->
+          <mdb-card-body cascade="true" class="text-center no-padding">
+            <!--Category & Title-->
+            <a href="" class="text-muted">
+              <h5>Apache Spark</h5>
+            </a>
+            <mdb-card-title>
+              <h4 class="card-title my-4">
+                <strong>
+                  Job Tweet Analysis</strong>
+              </h4>
+            </mdb-card-title>
+            <!--Description-->
+            <mdb-card-text>
+              Analyzed and filtered tweets using Spark Streaming and Kafka.
+              Consequently, stored the data MongoDB’s collections.
+            </mdb-card-text>
+            <!--Card footer-->
+            <div class="card-footer">
+              <a href="#spark" mdbPageScroll [pageScrollOffset]="100" [pageScrollSpeed]="2500"><button
+                  claas="text-center" mdbBtn type="button" color="git" gradient="blue" size="sm" rounded="true"
+                  mdbWavesEffect>Visit
+                  Here</button> <a type="button" (click)="goToSparkApp()" mdbTooltip="Navigate to Github"
+                  placement="bottom" class="icons-sm mr-8 git-ic">
+                  <mdb-icon class="grow" fab icon="github"></mdb-icon>
+                </a>
+              </a>
+            </div>
+          </mdb-card-body>
+          <!--/.Card content-->
+
+        </mdb-card>
+        <!--/.Card-->
+      </div>
+
+      <div class="col-md-4 clearfix d-none d-md-block">
+
+        <!--Card-->
+        <mdb-card cascade="true" narrower="true" class="card-ecommerce">
+
+          <!--Card image-->
+          <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+            <mdb-card-img src="/assets/images/android_logo.jpg" alt="apache spark"></mdb-card-img>
+            <a>
+              <div class=" mask waves-effect waves-light">
+              </div>
+            </a>
+          </div>
+          <!--/.Card image-->
+
+          <!--Card content-->
+          <mdb-card-body cascade="true" class="text-center no-padding">
+            <!--Category & Title-->
+            <a href="" class="text-muted">
+              <h5>Android</h5>
+            </a>
+            <mdb-card-title>
+              <h4 class="card-title my-4">
+                <strong>
+                  Trip Manager</strong>
+              </h4>
+            </mdb-card-title>
+            <!--Description-->
+            <mdb-card-text>
+              Manage trips and nearby places and view them on Google Map.
+              Implemented Parent-Child relationship in Recycler View.
+            </mdb-card-text>
+            <!--Card footer-->
+            <div class="card-footer">
+              <a href="#android" mdbPageScroll [pageScrollOffset]="90" [pageScrollSpeed]="2700"><button
+                  claas="text-center" mdbBtn type="button" color="git" gradient="blue" size="sm" rounded="true"
+                  mdbWavesEffect>Visit
+                  Here</button> <a type="button" (click)="goToAndroidApp()" mdbTooltip="Navigate to Github"
+                  placement="bottom" class="icons-sm mr-8 git-ic">
+                  <mdb-icon class="grow" fab icon="github"></mdb-icon>
+                </a>
+              </a>
+            </div>
+          </mdb-card-body>
+          <!--/.Card content-->
+
+        </mdb-card>
+        <!--/.Card-->
+
+      </div>
+    </mdb-slide>
+    <!--/Third slide-->
+  </mdb-carousel>
+  <!--/.Carousel Wrapper-->
+</section>
+<!--Section: Products v.5-->
+<!--</div>-->
+<hr class="container">
+<div id="recipe" class="wow fadeInLeft" data-wow-delay="0.2s" app-recipeingredient></div>
+<div id="spark" class="wow fadeInRight" data-wow-delay="0.2s" app-sparkstreaming></div>
+<div id="android" class="wow fadeInLeft" data-wow-delay="0.2s" app-tripmanager></div>
+<div id="chat" class="wow fadeInRight" data-wow-delay="0.2s" app-node-chat-app></div>
+<div id="graph" class="wow fadeInLeft" data-wow-delay="0.2s" app-lyrics></div>
+<div id="expense" class="wow fadeInRight" data-wow-delay="0.2s" app-expensify></div>
+<!-- <div id="aform" class="wow fadeInLeft" data-wow-delay="0.2s" app-angular-form></div> -->

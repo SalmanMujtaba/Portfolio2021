@@ -1,0 +1,13 @@
+.font-links {
+  font-size: 1rem;
+}
+
+:host header {
+  .view {
+    min-height: 100vh !important;
+
+    @media (max-width: 740px) {
+      height: 100vh;
+    }
+  }
+}

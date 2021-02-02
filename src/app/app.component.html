@@ -1,0 +1,71 @@
+<app-header></app-header>
+<app-about-me></app-about-me>
+<app-projects></app-projects>
+<div class="fixed-action-btn" style="bottom: 45px; right: 24px;" (mouseleave)="fixed.toggle()">
+
+  <a mdbBtn floating="true" size="lg" color="red" class="waves-light" mdbWavesEffect (mouseenter)="fixed.toggle()">
+    <mdb-icon fas icon="plus-circle"></mdb-icon>
+  </a>
+
+  <div class="fixed_collapse" mdbCollapse="isCollapsed" #fixed="bs-collapse">
+    <!-- Github -->
+    <a mdbBtn (click)="goToGitHub()" color="git" floating="true" color="black" size="sm" class="waves-light"
+      mdbWavesEffect>
+      <mdb-icon fab icon="github"></mdb-icon>
+    </a>
+    <!-- LinkedIn -->
+    <a (click)="goToLinkedIn()" mdbBtn floating="true" color="blue" size="sm" class="waves-light" mdbWavesEffect>
+      <mdb-icon fab icon="linkedin-in"></mdb-icon>
+    </a>
+    <!-- Facebook -->
+    <a type="button" (click)="goToFacebook()" mdbBtn floating="true" size="sm" color="fb" class="waves-light"
+      mdbWavesEffect>
+      <mdb-icon fab icon="facebook-f"></mdb-icon>
+    </a>
+
+    <!-- Top -->
+    <a type="button" href="#top-section" mdbBtn floating="true" size="sm" color="gplus" class="waves-light"
+      mdbWavesEffect mdbPageScroll [pageScrollDuration]="500">
+      <mdb-icon fas icon="arrow-up"></mdb-icon>
+    </a>
+
+
+    <!-- <a mdbBtn floating="true" color="red" class="waves-light" mdbWavesEffect>
+      <mdb-icon fas icon="star"></mdb-icon>
+    </a>
+    <a mdbBtn floating="true" color="yellow" class="darken-1 waves-light" mdbWavesEffect>
+      <mdb-icon fas icon="user"></mdb-icon>
+    </a>
+    <a mdbBtn floating="true" color="green" class="waves-light" mdbWavesEffect>
+      <mdb-icon fas icon="envelope"></mdb-icon>
+    </a> -->
+
+
+    <!-- <a type="button" mdbBtn floating="true" size="sm" color="fb" class=" waves-light" mdbWavesEffect>
+      <mdb-icon fab icon="facebook-f"></mdb-icon>
+    </a> -->
+
+  </div>
+
+</div>
+<!-- <div class="fixed-action-btn" style="bottom: 35px; right: 35px;" (mouseleave)="fixed.toggle()">
+
+  <a class="btn-floating btn-small grey waves-light" mdbRippleRadius (mouseenter)="fixed.toggle()">
+    <i class="fa fa-user-circle"></i>
+  </a>
+
+  <div class="fixed_collapse" [mdbCollapse]="isCollapsed" #fixed="bs-collapse">
+    <a (click)="goToGitHub()" class="btn-floating btn-small btn-git waves-light" mdbRippleRadius><i
+        class="fa fa-github"></i></a>
+    <a (click)="goToLinkedIn()" class="btn-floating btn-small btn-li waves-light" mdbRippleRadius><i
+        class="fa fa-linkedin"></i></a>
+    <a (click)="goToFacebook()" class="btn-floating btn-small btn-fb waves-light" mdbRippleRadius><i
+        class="fa fa-facebook"></i></a>
+    <a href="#top-section" class="btn-floating btn-small red waves-light" mdbRippleRadius mdbPageScroll
+      [pageScrollDuration]="500"><i class="fa fa-arrow-up"></i></a>
+  </div>
+
+</div> -->
+<!-- <app-game></app-game> -->
+<app-contact-form></app-contact-form>
+<app-footer></app-footer>

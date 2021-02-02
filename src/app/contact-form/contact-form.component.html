@@ -1,0 +1,136 @@
+<div class="skin mt-5">
+  <section class="pb-5 container fadeInUp wow" data-wow-delay="0.4s">
+
+    <!--Section heading-->
+    <h2 class="h1 pt-4 text-center mb-5">Contact</h2>
+    <div class="row">
+
+
+      <!--Grid column-->
+      <div class="col-lg-5" [ngClass]="{'my-4': !showProgressBar}">
+
+        <!--Form with header-->
+        <mdb-card>
+          <mdb-card-body [ngClass]="{'h-400 unique-color': showProgressBar}">
+            <div *ngIf="showProgressBar" class="h-100">
+              <div class="el-base">
+                <div class="el-inner-space">
+                  <div class="el-flap"></div>
+                </div>
+                <p *ngIf="entryText" class="white-text text-center wow fadeInUp">Sending Email</p>
+                <p *ngIf="exitText" class="white-text text-center wow fadeInUp">Email Sent</p>
+
+              </div>
+              <!-- <mdb-progress-bar class="progress primary-color-dark" mode="indeterminate">
+              </mdb-progress-bar> -->
+            </div>
+
+            <div *ngIf="!showProgressBar">
+
+              <!--Header-->
+              <div class="form-header blue accent-1">
+                <h3>
+                  <mdb-icon fas icon="envelope"></mdb-icon><span>
+                    Send a message!
+                  </span>
+                </h3>
+              </div>
+
+
+              <form [formGroup]="FormData" method="POST" (ngSubmit)="onSubmit()">
+                <!--Body-->
+                <div class="md-form">
+                  <mdb-icon fas icon="user" class="prefix grey-text"></mdb-icon>
+                  <input mdbInput mdbValidate formControlName="name" type="text" id="form3" class="form-control">
+                  <label for="form3">Your name</label>
+                  <!-- <mdb-error *ngIf="FormData.invalid && (FormData.dirty || FormData.touched)">Input invalid</mdb-error> -->
+                  <!-- <mdb-error [hidden]="input.valid && (input.dirty || input.touched)">
+                  Please
+                  enter your name.
+                </mdb-error> -->
+                </div>
+
+                <div class="md-form">
+                  <mdb-icon fas icon="envelope" class="prefix grey-text"></mdb-icon>
+                  <input mdbInput mdbValidate formControlName="email" type="text" id="form2" class="form-control">
+                  <label for="form2">Your email</label>
+                  <!-- <mdb-error *ngIf="FormData.invalid && (FormData.dirty || FormData.touched)">Please check your email.
+                </mdb-error> -->
+                </div>
+
+                <!-- <div class="md-form">
+                  <mdb-icon fas icon="tag" class="prefix grey-text"></mdb-icon>
+                  <input mdbInput mdbValidate formControlName="subject" type="text" id="form32" class="form-control">
+                  <label for="form34">Subject</label>
+                </div> -->
+
+                <div class="md-form">
+                  <mdb-icon fas icon="pencil-alt" class="prefix grey-text"></mdb-icon>
+                  <textarea mdbInput mdbValidate formControlName="message" type="text" id="form8"
+                    class="md-textarea"></textarea>
+                  <label for="form8">Message</label>
+                  <!-- <mdb-error *ngIf="FormData.invalid && (FormData.dirty || FormData.touched)">Please enter between 10 and
+                  200 characters.</mdb-error> -->
+                </div>
+
+                <div class="text-center">
+                  <button mdbBtn color="blue" class="waves-light" mdbWavesEffect>Submit</button>
+                </div>
+              </form>
+
+
+            </div>
+
+          </mdb-card-body>
+
+        </mdb-card>
+        <!--Form with header-->
+
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-7">
+
+        <!--Google map-->
+        <agm-map class="z-depth-1-half map-container" style="height: 400px;" [latitude]="map.lat" [longitude]="map.lng">
+          <agm-marker [latitude]="map.lat" [longitude]="map.lng"></agm-marker>
+        </agm-map>
+
+        <br>
+        <!--Buttons-->
+        <div class="row text-center">
+          <div class="col-md-4">
+            <a mdbBtn floating="true" color="blue" class="accent-1 waves-light" mdbWavesEffect>
+              <mdb-icon fas icon="map-marked"></mdb-icon>
+            </a>
+            <p>Toronto</p>
+            <p>Canada</p>
+          </div>
+
+          <div class="col-md-4">
+            <a mdbBtn floating="true" color="blue" class="accent-1 waves-light" mdbWavesEffect>
+              <mdb-icon fas icon="phone"></mdb-icon>
+            </a>
+            <p>+1 716 598 5583</p>
+            <p>Mon - Fri, 8:00-22:00</p>
+          </div>
+
+          <div class="col-md-4">
+            <a mdbBtn floating="true" color="blue" class="accent-1 waves-light" mdbWavesEffect>
+              <mdb-icon fas icon="envelope"></mdb-icon>
+            </a>
+            <p>salman.mujtaba@yahoo.com</p>
+          </div>
+        </div>
+
+      </div>
+      <!--Grid column-->
+
+    </div>
+
+  </section>
+</div>
+<!--Section: Contact v.1-->
+
+<!--Section: Contact v.1-->
