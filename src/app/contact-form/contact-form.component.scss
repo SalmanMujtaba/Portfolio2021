@@ -83,3 +83,9 @@ body {
     transform-origin: center top;
   }
 }
+
+.s-margin-bottom {
+  @media (max-width: 400px) {
+    bottom: -35px
+  }
+}
