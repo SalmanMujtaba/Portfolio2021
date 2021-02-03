@@ -68,7 +68,8 @@
                 </div>
 
                 <div class="text-center">
-                  <button mdbBtn color="blue" class="waves-light" mdbWavesEffect>Submit</button>
+                  <button [disabled]="FormData.invalid" mdbBtn color="blue" class="waves-light"
+                    mdbWavesEffect>Submit</button>
                 </div>
               </form>
 
