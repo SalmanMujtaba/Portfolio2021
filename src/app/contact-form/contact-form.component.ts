@@ -35,7 +35,7 @@ export class ContactFormComponent implements OnInit {
       message: new FormControl("", [
         Validators.required,
         Validators.minLength(3),
-        Validators.maxLength(200),
+        Validators.maxLength(300),
       ]),
     });
   }
@@ -53,5 +53,17 @@ export class ContactFormComponent implements OnInit {
       }, 2000);
       this.contactService.sendMessage(this.FormData);
     }
+  }
+
+  get name() {
+    return this.FormData.get("name");
+  }
+
+  get email() {
+    return this.FormData.get("email");
+  }
+
+  get message() {
+    return this.FormData.get("message");
   }
 }
