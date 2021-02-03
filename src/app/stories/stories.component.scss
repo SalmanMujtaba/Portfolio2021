@@ -4,3 +4,14 @@
     }
 
   }
+
+  .carousel-caption {
+    @media (max-width: 767px) {
+      bottom: 0;
+      padding-bottom: 0;
+
+      p {
+        margin-bottom: 0
+      }
+    }
+  }
