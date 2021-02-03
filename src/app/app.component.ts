@@ -8,6 +8,7 @@ import { Redirect } from "./../services/redirect.service";
 })
 export class AppComponent {
   isCollapsed: any;
+
   constructor(private redirects: Redirect) {
     window.scroll(0, 0);
   }

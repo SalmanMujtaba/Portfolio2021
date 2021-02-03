@@ -55,6 +55,15 @@ body::-webkit-scrollbar-thumb {
   background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+}
+
 .container {
   @media (min-width: 576px) {
     max-width: 540px;
