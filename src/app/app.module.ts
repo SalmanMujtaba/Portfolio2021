@@ -28,6 +28,7 @@ import { ProjectsComponent } from "./projects/projects.component";
 import { RecipeIngredientComponent } from "./projects/recipe-ingredient/recipe-ingredient.component";
 import { SparkStreamingComponent } from "./projects/spark-streaming/spark-streaming.component";
 import { TripManagerComponent } from "./projects/trip-manager/trip-manager.component";
+import { StoriesComponent } from './stories/stories.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { TripManagerComponent } from "./projects/trip-manager/trip-manager.compo
     FooterComponent,
     GameComponent,
     ContactFormComponent,
+    StoriesComponent,
     // AngularFormComponent,
   ],
   imports: [
