@@ -93,8 +93,8 @@
 
             <!--Card footer-->
             <div class="card-footer">
-              <button claas="text-center" mdbBtn type="button" gradient="blue" size="sm" rounded="true"
-                mdbWavesEffect>Visit Here</button>
+              <button (click)="goTotableau()" claas="text-center" mdbBtn type="button" gradient="blue" size="sm"
+                rounded="true" mdbWavesEffect>Visit Here</button>
             </div>
           </mdb-card-body>
           <!--/.Card content-->
@@ -185,7 +185,7 @@
             </mdb-card-text>
             <!--Card footer-->
             <div class="card-footer">
-              <a href="#expense" mdbPageScroll [pageScrollOffset]="90" [pageScrollDuration]="500"><button
+              <a href="#expense" mdbPageScroll [pageScrollOffset]="60" [pageScrollDuration]="1000"><button
                   claas="text-center" mdbBtn color="git" type="button" gradient="blue" size="sm" rounded="true"
                   mdbWavesEffect>Visit
                   Here</button> <a type="button" (click)="goToExpenseApp()" mdbTooltip="Navigate to Github"
@@ -288,7 +288,7 @@
             </mdb-card-text>
             <!--Card footer-->
             <div class="card-footer">
-              <a href="#recipe" mdbPageScroll [pageScrollOffset]="90" [pageScrollDuration]="100"><button
+              <a href="#recipe" mdbPageScroll [pageScrollOffset]="90" [pageScrollDuration]="600"><button
                   claas="text-center" mdbBtn color="git" type="button" gradient="blue" size="sm" rounded="true"
                   mdbWavesEffect>Visit
                   Here</button> <a type="button" (click)="goToRecipeIngredientApp()" mdbTooltip="Navigate to Github"
@@ -443,7 +443,7 @@
             </mdb-card-text>
             <!--Card footer-->
             <div class="card-footer">
-              <a href="#android" mdbPageScroll [pageScrollOffset]="90" [pageScrollSpeed]="2700"><button
+              <a href="#android" mdbPageScroll [pageScrollOffset]="50" [pageScrollSpeed]="2700"><button
                   claas="text-center" mdbBtn type="button" color="git" gradient="blue" size="sm" rounded="true"
                   mdbWavesEffect>Visit
                   Here</button> <a type="button" (click)="goToAndroidApp()" mdbTooltip="Navigate to Github"

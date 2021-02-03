@@ -4,6 +4,7 @@
 @import "~ng-uikit-pro-standard/assets/scss/addons-pro/_blog-pro.scss";
 @import "~ng-uikit-pro-standard/assets/scss/addons-pro/_ecommerce-pro.scss"; // Import only when you want to use the Products examples
 @import "~ng-uikit-pro-standard/assets/scss/sections-pro/_contacts-pro.scss";
+@import "~ng-uikit-pro-standard/assets/scss/sections-pro/_testimonials-pro.scss";
 
 .top-nav-collapse {
   background-color: #243a51 !important;
@@ -113,34 +114,6 @@ mdb-icon {
   color: black;
 }
 
-@mixin dotAnims($color) {
-  position: relative;
-  display: inline-block;
-  background: $color;
-  border-radius: 0;
-  width: 0.625rem;
-  height: 0.625rem;
-  margin: 0.3125rem;
-
-  -webkit-animation-name: bounceAnimation;
-  animation-name: bounceAnimation;
-  -webkit-animation-duration: 1.2s;
-  animation-duration: 1.2s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-
-  &:nth-child(1) {
-    -webkit-animation-delay: 0s;
-    animation-delay: 0s;
-  }
-
-  &:nth-child(2) {
-    -webkit-animation-delay: 0.14s;
-    animation-delay: 0.14s;
-  }
-
-  &:nth-child(3) {
-    -webkit-animation-delay: 0.28s;
-    animation-delay: 0.28s;
-  }
+.bold {
+  font-weight: 400;
 }
