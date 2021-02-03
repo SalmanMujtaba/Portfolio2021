@@ -89,3 +89,9 @@ body {
     bottom: -35px
   }
 }
+
+.progress-bar-margin {
+  @media (max-width: 768px) {
+    margin-bottom: 20px;
+  }
+}

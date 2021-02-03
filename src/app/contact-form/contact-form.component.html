@@ -10,7 +10,7 @@
       <div class="col-lg-5" [ngClass]="{'my-4': !showProgressBar}">
 
         <!--Form with header-->
-        <mdb-card>
+        <mdb-card [ngClass]="{'progress-bar-margin': showProgressBar}">
           <mdb-card-body [ngClass]="{'h-400 unique-color': showProgressBar}">
             <div *ngIf="showProgressBar" class="h-100">
               <div class="el-base">
