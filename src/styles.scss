@@ -7,20 +7,19 @@
 @import "~ng-uikit-pro-standard/assets/scss/sections-pro/_testimonials-pro.scss";
 
 .top-nav-collapse {
-  background-color: #243a51 !important;
-
+  background-color: #563e91 !important;
 }
 
 .navbar:not(.top-nav-collapse) {
   background: transparent !important;
 }
 
-
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .navbar:not(.top-nav-collapse) {
-    background: #243a51 !important;
+    background: #563e91 !important;
   }
 }
+
 
 h1 {
   letter-spacing: 8px;
@@ -125,4 +124,16 @@ mdb-icon {
 
 .bold {
   font-weight: 400;
+}
+
+.hide-ipad {
+  @media (max-width: 1366px) {
+    display: none;
+  }
+}
+
+.hide-desktop {
+  @media (min-width: 1367px) {
+    display: none;
+  }
 }
