@@ -30,6 +30,7 @@ import { SparkStreamingComponent } from "./projects/spark-streaming/spark-stream
 import { TripManagerComponent } from "./projects/trip-manager/trip-manager.component";
 import { StoriesComponent } from './stories/stories.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { YashaComponent } from './yasha/yasha.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
     ContactFormComponent,
     StoriesComponent,
     TestimonialsComponent,
+    YashaComponent,
     // AngularFormComponent,
   ],
   imports: [
