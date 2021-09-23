@@ -31,6 +31,7 @@ import { TripManagerComponent } from "./projects/trip-manager/trip-manager.compo
 import { StoriesComponent } from './stories/stories.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { YashaComponent } from './yasha/yasha.component';
+import { GithubApiComponent } from './projects/github-api/github-api.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { YashaComponent } from './yasha/yasha.component';
     StoriesComponent,
     TestimonialsComponent,
     YashaComponent,
+    GithubApiComponent,
     // AngularFormComponent,
   ],
   imports: [
