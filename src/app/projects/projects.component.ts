@@ -1,14 +1,16 @@
 import { Component, OnInit } from "@angular/core";
+
 import { Redirect } from "./../../services/redirect.service";
+
 @Component({
   selector: "app-projects",
   templateUrl: "./projects.component.html",
   styleUrls: ["./projects.component.scss"],
 })
 export class ProjectsComponent implements OnInit {
-  constructor(private redirects: Redirect) {}
+  constructor(private redirects: Redirect) { }
 
-  ngOnInit() {}
+  ngOnInit() { }
 
   goToExpenseApp() {
     this.redirects.goToExpensifyApp();
@@ -40,5 +42,9 @@ export class ProjectsComponent implements OnInit {
 
   goToChatApp() {
     this.redirects.goToNodeChatApp();
+  }
+
+  goToGithubApp() {
+    this.redirects.goToGithubApp();
   }
 }
