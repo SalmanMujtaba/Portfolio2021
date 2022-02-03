@@ -1,10 +1,12 @@
-import { Component } from "@angular/core";
+import { ChangeDetectionStrategy, Component } from "@angular/core";
+
 import { Redirect } from "./../../services/redirect.service";
 
 @Component({
   selector: "app-about-me",
   templateUrl: "./about-me.component.html",
   styleUrls: ["./about-me.component.scss"],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AboutMeComponent {
   constructor(private redirects: Redirect) {}
