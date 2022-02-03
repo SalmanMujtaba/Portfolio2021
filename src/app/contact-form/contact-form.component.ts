@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { ChangeDetectionStrategy, Component, OnInit } from "@angular/core";
 import {
   FormBuilder,
   FormControl,
@@ -11,6 +11,7 @@ import { ContactService } from "./../../services/contact.service";
   selector: "app-contact-form",
   templateUrl: "./contact-form.component.html",
   styleUrls: ["./contact-form.component.scss"],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ContactFormComponent implements OnInit {
   public map: any = { lat: 43.6532, lng: -79.3832 };

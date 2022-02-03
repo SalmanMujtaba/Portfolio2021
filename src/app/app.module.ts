@@ -14,14 +14,11 @@ import {
 import { ContactService } from "./../services/contact.service";
 import { Redirect } from "./../services/redirect.service";
 import { AboutMeComponent } from "./about-me/about-me.component";
-// import { AngularFormComponent } from "./angular-form/angular-form.component";
 import { AppComponent } from "./app.component";
 import { ContactFormComponent } from "./contact-form/contact-form.component";
 import { FooterComponent } from "./footer/footer.component";
 import { HeaderComponent } from "./header/header.component";
-import { AngularFormComponent } from "./projects/angular-form/angular-form.component";
 import { ExpensifyComponent } from "./projects/expensify/expensify.component";
-import { GameComponent } from "./projects/game/game.component";
 import { LyricsAppComponent } from "./projects/lyrics-app/lyrics-app.component";
 import { NodeChatAppComponent } from "./projects/node-chat-app/node-chat-app.component";
 import { ProjectsComponent } from "./projects/projects.component";
@@ -44,14 +41,11 @@ import { YashaComponent } from './yasha/yasha.component';
     NodeChatAppComponent,
     LyricsAppComponent,
     ExpensifyComponent,
-    AngularFormComponent,
     FooterComponent,
-    GameComponent,
     ContactFormComponent,
     StoriesComponent,
     TestimonialsComponent,
     YashaComponent,
-    // AngularFormComponent,
   ],
   imports: [
     FormsModule,
