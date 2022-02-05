@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build-prod": "ng build --prod && gzip-all dist/ng-uikit-pro-standard/*",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -25,6 +26,7 @@
     "animate.css": "^3.7.2",
     "chart.js": "^2.5.0",
     "easy-pie-chart": "2.1.x",
+    "gzip-all": "^1.0.0",
     "hammerjs": "^2.0.8",
     "ng-uikit-pro-standard": "file:ng-uikit-pro-standard-10.1.1.tgz",
     "rxjs": "~6.5.4",
