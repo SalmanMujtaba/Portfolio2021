@@ -3,10 +3,8 @@
   box-shadow: 0 0.125rem 0.3125rem 0 rgba(0, 0, 0, .16), 0 0.125rem 0.625rem 0 rgba(0, 0, 0, .12);
   border-radius: 0.125rem;
   font-weight: 400;
-
   @media only screen and (max-width: 601px) {
     text-align: center;
-
     img {
       margin-bottom: 2rem;
       display: inline;
@@ -16,7 +14,6 @@
 
 .changeMargin {
   margin-top: 50px;
-
   @media all and (max-width: 320px) {
     margin-top: 0px;
   }
@@ -28,4 +25,37 @@
 
 .personal-sm {
   margin-bottom: 20px;
+}
+
+.text {
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+  border-right: 4px solid black;
+  // font-size: 180%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.animation {
+  animation: typewriter 4s steps(15) 1s 1 normal both, blinkCursor 500ms steps(15) infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 180px;
+  }
+}
+
+@keyframes blinkCursor {
+  from {
+    border-right-color: black;
+  }
+  to {
+    border-right-color: transparent;
+  }
 }
