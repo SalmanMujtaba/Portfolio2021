@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from "@angular/core";
+import { AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, ViewChild } from "@angular/core";
 
 import { Redirect } from "./../../services/redirect.service";
 
@@ -8,8 +8,29 @@ import { Redirect } from "./../../services/redirect.service";
   styleUrls: ["./about-me.component.scss"],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class AboutMeComponent {
-  constructor(private redirects: Redirect) {}
+export class AboutMeComponent implements AfterViewInit {
+  @ViewChild("animatedText") animatedText: ElementRef;
+  constructor(private redirects: Redirect) {
+
+  }
+
+  ngAfterViewInit() {
+    let options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.7
+    };
+    let observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          this.animatedText.nativeElement.classList.add("text-to-animate", "typewriter-animation");
+        } else {
+          this.animatedText.nativeElement.classList.remove("text-to-animate", "typewriter-animation");
+        }
+      }), options
+    });
+    observer.observe(document.getElementById('about'));
+  }
 
   goToGithub(): void {
     this.redirects.goToGithub();
