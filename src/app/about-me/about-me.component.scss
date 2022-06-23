@@ -27,18 +27,13 @@
   margin-bottom: 20px;
 }
 
-.text {
-  // position: absolute;
-  // top: 50%;
-  // left: 50%;
-  // transform: translate(-50%, -50%);
+.text-to-animate {
   border-right: 4px solid black;
-  // font-size: 180%;
   white-space: nowrap;
   overflow: hidden;
 }
 
-.animation {
+.typewriter-animation {
   animation: typewriter 4s steps(15) 1s 1 normal both, blinkCursor 500ms steps(15) infinite normal;
 }
 

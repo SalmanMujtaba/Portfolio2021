@@ -23,29 +23,14 @@ export class AboutMeComponent implements AfterViewInit {
     let observer = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          this.animatedText.nativeElement.classList.add("text", "animation");
+          this.animatedText.nativeElement.classList.add("text-to-animate", "typewriter-animation");
         } else {
-          this.animatedText.nativeElement.classList.remove("text", "animation");
+          this.animatedText.nativeElement.classList.remove("text-to-animate", "typewriter-animation");
         }
       }), options
     });
     observer.observe(document.getElementById('about'));
   }
-
-  callbackFunc(entries, observer) {
-    entries.forEach(entry => {
-      this.toggleAnimation(entry.isIntersecting);
-    });
-  }
-
-  toggleAnimation(isVisible): void {
-    if (isVisible) {
-      this.animatedText.nativeElement.classList.add("text animation");
-    } else {
-      this.animatedText.nativeElement.classList.remove("text animation");
-    }
-  }
-
 
   goToGithub(): void {
     this.redirects.goToGithub();
