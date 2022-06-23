@@ -1,7 +1,9 @@
 .author-box {
   padding: 3rem;
-  box-shadow: 0 0.125rem 0.3125rem 0 rgba(0, 0, 0, .16), 0 0.125rem 0.625rem 0 rgba(0, 0, 0, .12);
-  border-radius: 0.125rem;
+  border: solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(60deg, #b16ec4, #5f97b9);
   font-weight: 400;
   @media only screen and (max-width: 601px) {
     text-align: center;
