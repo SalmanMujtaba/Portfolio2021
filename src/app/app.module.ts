@@ -28,6 +28,9 @@ import { TripManagerComponent } from "./projects/trip-manager/trip-manager.compo
 import { StoriesComponent } from './stories/stories.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { YashaComponent } from './yasha/yasha.component';
+import { GithubRepositorySearchComponent } from './projects/github-repository-search/github-repository-search.component';
+import { TicTacToeComponent } from './projects/tic-tac-toe/tic-tac-toe.component';
+import { AlbumsSearchComponent } from './projects/albums-search/albums-search.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +49,9 @@ import { YashaComponent } from './yasha/yasha.component';
     StoriesComponent,
     TestimonialsComponent,
     YashaComponent,
+    GithubRepositorySearchComponent,
+    TicTacToeComponent,
+    AlbumsSearchComponent,
   ],
   imports: [
     FormsModule,
