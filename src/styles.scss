@@ -106,7 +106,7 @@ body {
 mdb-icon {
   &.grow {
     transition: all .2s ease-in-out;
-
+    will-change: transform;
     &:hover {
       transform: scale(1.5);
     }

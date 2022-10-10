@@ -23,7 +23,9 @@ export class AboutMeComponent implements AfterViewInit {
     let observer = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          this.animatedText.nativeElement.classList.add("text-to-animate", "typewriter-animation");
+          window.requestAnimationFrame(() => {
+            this.animatedText.nativeElement.classList.add("text-to-animate", "typewriter-animation");
+          });
         } else {
           this.animatedText.nativeElement.classList.remove("text-to-animate", "typewriter-animation");
         }
