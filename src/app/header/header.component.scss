@@ -5,9 +5,25 @@
 :host header {
   .view {
     min-height: 100vh !important;
-
     @media (max-width: 740px) {
       height: 100vh;
     }
+  }
+}
+
+.header-collapsed-navbar {
+  @media (max-width: 992px) {
+    visibility: hidden;
+  }
+}
+
+.header-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px 300px;
+  &__content {
+    grid-row: 2/3;
   }
 }
