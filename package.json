@@ -4,11 +4,12 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod && gzip-all dist/ng-uikit-pro-standard/*",
+    "build-dev": "ng build --prod && gzip-all dist/ng-uikit-pro-standard/*",
     "build-prod": "ng build --prod && gzip-all dist/ng-uikit-pro-standard/*",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "vercel-build": "npm run build:ssr"
   },
   "private": true,
   "dependencies": {
