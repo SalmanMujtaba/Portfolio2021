@@ -25,7 +25,9 @@ export class AboutMeComponent implements AfterViewInit {
         if (entry.isIntersecting) {
           this.animatedText.nativeElement.classList.add("text-to-animate", "typewriter-animation");
         } else {
-          this.animatedText.nativeElement.classList.remove("text-to-animate", "typewriter-animation");
+          window.requestAnimationFrame(() => {
+            this.animatedText.nativeElement.classList.remove("text-to-animate", "typewriter-animation");
+          });
         }
       }), options
     });
