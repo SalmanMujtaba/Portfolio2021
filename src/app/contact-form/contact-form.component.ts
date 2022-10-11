@@ -3,8 +3,9 @@ import {
   FormBuilder,
   FormControl,
   FormGroup,
-  Validators,
+  Validators
 } from "@angular/forms";
+
 import { ContactService } from "./../../services/contact.service";
 
 @Component({
@@ -20,12 +21,14 @@ export class ContactFormComponent implements OnInit {
   showProgressBar: boolean;
   hideProgressBarSecond: boolean;
   entryText: boolean = true;
+  markers: any[] = [];
   exitText: boolean;
+
 
   constructor(
     private builder: FormBuilder,
     private contactService: ContactService
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     this.FormData = this.builder.group({
@@ -39,6 +42,18 @@ export class ContactFormComponent implements OnInit {
         Validators.maxLength(300),
       ]),
     });
+    this.markers.push({
+      position: {
+        lat: 43.6532, lng: -79.3832
+      },
+      label: {
+        color: 'red',
+        text: 'Marker label ' + (this.markers.length + 1),
+      },
+      title: 'Marker title ' + (this.markers.length + 1),
+      options: { animation: google.maps.Animation.BOUNCE },
+    });
+
   }
 
   onSubmit() {

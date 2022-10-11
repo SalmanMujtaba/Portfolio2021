@@ -5,17 +5,15 @@
 @import "~ng-uikit-pro-standard/assets/scss/addons-pro/_ecommerce-pro.scss"; // Import only when you want to use the Products examples
 @import "~ng-uikit-pro-standard/assets/scss/sections-pro/_contacts-pro.scss";
 @import "~ng-uikit-pro-standard/assets/scss/sections-pro/_testimonials-pro.scss";
+@import "~ng-uikit-pro-standard/assets/scss/sections-pro/_contacts-pro.scss";
 @import 'animate.css';
-
 .top-nav-collapse {
   background-color: #243a51 !important;
-
 }
 
 .navbar:not(.top-nav-collapse) {
   background: transparent !important;
 }
-
 
 @media (max-width: 768px) {
   .navbar:not(.top-nav-collapse) {
@@ -35,7 +33,6 @@ h5 {
   border-top: 3px solid #fff;
   width: 80px;
 }
-
 
 body::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
@@ -68,30 +65,21 @@ body {
 .container {
   @media (min-width: 576px) {
     max-width: 540px;
-
   }
-
   @media (min-width: 768px) {
     max-width: 720px;
-
   }
-
   @media (min-width: 992px) {
     max-width: 960px;
-
   }
-
   @media (min-width: 1200px) {
     max-width: 1140px;
-
   }
-
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-
 }
 
 .navbar {
@@ -107,7 +95,6 @@ body {
 mdb-icon {
   &.grow {
     transition: all .2s ease-in-out;
-
     &:hover {
       transform: scale(1.5);
     }

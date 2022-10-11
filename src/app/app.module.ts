@@ -7,7 +7,6 @@ import {
 } from "ng-uikit-pro-standard";
 
 import { AboutMeComponent } from "./about-me/about-me.component";
-// import { AgmCoreModule } from "@agm/core";
 import { AppComponent } from "./app.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { BrowserModule } from "@angular/platform-browser";
@@ -15,6 +14,7 @@ import { ContactFormComponent } from "./contact-form/contact-form.component";
 import { ContactService } from "./../services/contact.service";
 import { ExpensifyComponent } from "./projects/expensify/expensify.component";
 import { FooterComponent } from "./footer/footer.component";
+import { GoogleMapsModule } from '@angular/google-maps';
 import { HeaderComponent } from "./header/header.component";
 // import { TooltipModule, ButtonsModule, WavesModule } from 'ng-uikit-pro-standard'
 // import { SmoothscrollModule, WavesModule } from 'ng-uikit-pro-standard'
@@ -58,10 +58,7 @@ import { YashaComponent } from './yasha/yasha.component';
     HttpClientModule,
     ToastModule.forRoot(),
     MDBBootstrapModulesPro.forRoot(),
-    // AgmCoreModule.forRoot({
-    //   // https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en#key
-    //   apiKey: "AIzaSyA8i7AGR1UtH1n9iUyHcVC-qqZ8NzVcpYQ",
-    // }),
+    GoogleMapsModule,
   ],
   providers: [MDBSpinningPreloader, Redirect, ContactService],
   bootstrap: [AppComponent],
