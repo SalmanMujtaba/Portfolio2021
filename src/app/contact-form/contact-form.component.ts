@@ -23,12 +23,15 @@ export class ContactFormComponent implements OnInit {
   entryText: boolean = true;
   markers: any[] = [];
   exitText: boolean;
-
-
+  center: google.maps.LatLngLiteral;
   constructor(
     private builder: FormBuilder,
     private contactService: ContactService
-  ) { }
+  ) {
+    this.center = {
+      lat: 43.6532, lng: -79.3832,
+    };
+  }
 
   ngOnInit(): void {
     this.FormData = this.builder.group({
@@ -47,10 +50,10 @@ export class ContactFormComponent implements OnInit {
         lat: 43.6532, lng: -79.3832
       },
       label: {
-        color: 'red',
-        text: 'Marker label ' + (this.markers.length + 1),
+        color: '#1976d2',
+        text: 'Toronto',
       },
-      title: 'Marker title ' + (this.markers.length + 1),
+      title: 'Toronto',
       options: { animation: google.maps.Animation.BOUNCE },
     });
 
