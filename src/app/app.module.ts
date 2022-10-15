@@ -29,6 +29,7 @@ import { StoriesComponent } from './stories/stories.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { TripManagerComponent } from "./projects/trip-manager/trip-manager.component";
 import { YashaComponent } from './yasha/yasha.component';
+import { TicTacToeComponent } from './projects/tic-tac-toe/tic-tac-toe.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { YashaComponent } from './yasha/yasha.component';
     StoriesComponent,
     TestimonialsComponent,
     YashaComponent,
+    TicTacToeComponent,
   ],
   imports: [
     FormsModule,
