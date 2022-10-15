@@ -16,3 +16,31 @@
     visibility: hidden;
   }
 }
+
+.header-wrapper {
+  background-image: url('https://sat02pap002files.storage.live.com/y4mUjKfSDh_PY1o5ovaFL5b3r6Iszl7w2nAtGOa3eIfsWewbrvHTXWKZxpZgR4ezFkIaSzpvle2NMhxjZsRP2rdOemwG4RyZNnymTMrohE_0qA0RgC4mM-UB3W0vmgl8yN8rBRLEUjve-DZdPuLbbRA6A_WmIy7N4LxO3v1q8bNaEMRmeZMMGSEs2EyuGC-eaWr?width=4032&height=3024&cropmode=none');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.header-component {
+  display: grid !important;
+  grid-template-columns: repeat(10, 1fr);
+  position: relative;
+  height: 100vh;
+  grid-template-rows: repeat(10, 1fr);
+  &__inner {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    place-content: center;
+    grid-row: 3/4;
+    grid-column: 2/10;
+    color: white;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    box-sizing: border-box;
+  }
+}
