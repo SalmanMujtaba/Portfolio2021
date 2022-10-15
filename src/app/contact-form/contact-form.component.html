@@ -1,5 +1,5 @@
 <div class="skin margin-top-7rem" id="contact">
-  <section class="pb-5 container fadeInLeft wow" data-wow-delay="0.3s">
+  <section class="pb-5 container animate__fadeInUp animate__animated wow" data-wow-delay="0.3s">
 
     <!--Section heading-->
     <h2 class="h1 pt-4 text-center mb-5">Contact</h2>
@@ -43,8 +43,7 @@
                   <mdb-icon fas icon="user" class="prefix grey-text"></mdb-icon>
                   <input mdbInput mdbValidate formControlName="name" type="text" id="form3" class="form-control">
                   <label for="form3">Your name</label>
-                  <mdb-error *ngIf="name.invalid && (name.dirty || name.touched)">Please
-                    enter a name
+                  <mdb-error *ngIf="name.invalid && (name.dirty || name.touched)">Please enter a name
                   </mdb-error>
                 </div>
 
@@ -58,19 +57,16 @@
 
                 <div class="md-form">
                   <mdb-icon fas icon="pencil-alt" class="prefix grey-text"></mdb-icon>
-                  <textarea mdbInput mdbValidate formControlName="message" type="text" id="form8"
-                    class="md-textarea"></textarea>
+                  <textarea mdbInput mdbValidate formControlName="message" type="text" id="form8" class="md-textarea"></textarea>
                   <label for="form8">Message</label>
                   <mdb-error class="s-margin-bottom" *ngIf="message.invalid && (message.dirty || message.touched)">
-                    Please enter a message
-                    between 3-300 characters.
+                    Please enter a message between 3-300 characters.
                   </mdb-error>
 
                 </div>
 
                 <div class="text-center">
-                  <button [disabled]="FormData.invalid" mdbBtn color="blue" class="waves-light"
-                    mdbWavesEffect>Submit</button>
+                  <button [disabled]="FormData.invalid" mdbBtn color="blue" class="waves-light" mdbWavesEffect>Submit</button>
                 </div>
               </form>
 
@@ -89,9 +85,10 @@
       <div class="col-lg-7">
 
         <!--Google map-->
-        <agm-map class="z-depth-1-half map-container" style="height: 400px;" [latitude]="map.lat" [longitude]="map.lng">
-          <agm-marker [latitude]="map.lat" [longitude]="map.lng"></agm-marker>
-        </agm-map>
+        <google-map [center]="center" width="100%" height="400px" class="z-depth-1-half map-container">
+          <map-marker *ngFor="let marker of markers" [position]="marker.position" [label]="marker.label" [title]="marker.title" [options]="marker.options">
+          </map-marker>
+        </google-map>
 
         <br>
         <!--Buttons-->
