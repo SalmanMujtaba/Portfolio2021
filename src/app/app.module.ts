@@ -7,6 +7,7 @@ import {
 } from "ng-uikit-pro-standard";
 
 import { AboutMeComponent } from "./about-me/about-me.component";
+import { AlgoliaComponent } from './projects/algolia/algolia.component';
 import { AppComponent } from "./app.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { BrowserModule } from "@angular/platform-browser";
@@ -16,22 +17,22 @@ import { ExpensifyComponent } from "./projects/expensify/expensify.component";
 import { FooterComponent } from "./footer/footer.component";
 import { GoogleMapsModule } from '@angular/google-maps';
 import { HeaderComponent } from "./header/header.component";
-// import { TooltipModule, ButtonsModule, WavesModule } from 'ng-uikit-pro-standard'
 // import { SmoothscrollModule, WavesModule } from 'ng-uikit-pro-standard'
 import { HttpClientModule } from "@angular/common/http";
+import { LyftFormComponent } from './projects/lyft-form/lyft-form.component';
 import { LyricsAppComponent } from "./projects/lyrics-app/lyrics-app.component";
 import { NodeChatAppComponent } from "./projects/node-chat-app/node-chat-app.component";
 import { ProjectsComponent } from "./projects/projects.component";
 import { RecipeIngredientComponent } from "./projects/recipe-ingredient/recipe-ingredient.component";
 import { Redirect } from "./../services/redirect.service";
+import { SearchBasedComponent } from './projects/search-based/search-based.component';
 import { SparkStreamingComponent } from "./projects/spark-streaming/spark-streaming.component";
 import { StoriesComponent } from './stories/stories.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
-import { TripManagerComponent } from "./projects/trip-manager/trip-manager.component";
-import { YashaComponent } from './yasha/yasha.component';
 import { TicTacToeComponent } from './projects/tic-tac-toe/tic-tac-toe.component';
-import { AlgoliaComponent } from './projects/algolia/algolia.component';
-import { LyftFormComponent } from './projects/lyft-form/lyft-form.component';
+import { TripManagerComponent } from "./projects/trip-manager/trip-manager.component";
+import { WavesModule } from 'ng-uikit-pro-standard';
+import { YashaComponent } from './yasha/yasha.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +54,7 @@ import { LyftFormComponent } from './projects/lyft-form/lyft-form.component';
     TicTacToeComponent,
     AlgoliaComponent,
     LyftFormComponent,
+    SearchBasedComponent,
   ],
   imports: [
     FormsModule,
@@ -63,6 +65,7 @@ import { LyftFormComponent } from './projects/lyft-form/lyft-form.component';
     FormsModule,
     HttpClientModule,
     ToastModule.forRoot(),
+    WavesModule,
     MDBBootstrapModulesPro.forRoot(),
     GoogleMapsModule,
   ],
