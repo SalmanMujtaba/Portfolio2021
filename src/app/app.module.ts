@@ -30,6 +30,8 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { TripManagerComponent } from "./projects/trip-manager/trip-manager.component";
 import { YashaComponent } from './yasha/yasha.component';
 import { TicTacToeComponent } from './projects/tic-tac-toe/tic-tac-toe.component';
+import { AlgoliaComponent } from './projects/algolia/algolia.component';
+import { LyftFormComponent } from './projects/lyft-form/lyft-form.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +51,8 @@ import { TicTacToeComponent } from './projects/tic-tac-toe/tic-tac-toe.component
     TestimonialsComponent,
     YashaComponent,
     TicTacToeComponent,
+    AlgoliaComponent,
+    LyftFormComponent,
   ],
   imports: [
     FormsModule,
