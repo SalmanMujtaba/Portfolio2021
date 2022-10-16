@@ -1,7 +1,7 @@
 import { Injectable } from "@angular/core";
 @Injectable()
 export class Redirect {
-  constructor() {}
+  constructor() { }
   goToGithub(): void {
     window.open("https://github.com/SalmanMujtaba", "_blank");
   }
@@ -72,5 +72,13 @@ export class Redirect {
 
   goToTableau() {
     window.open("https://github.com/SalmanMujtaba/Tableau-Dashboard", "_blank");
+  }
+
+  goToLyftSourceCode() {
+    window.open("https://github.com/SalmanMujtaba/Lyft", "_blank");
+  }
+
+  goToLyftForm() {
+    window.open("https://someform.vercel.app", "_blank");
   }
 }
