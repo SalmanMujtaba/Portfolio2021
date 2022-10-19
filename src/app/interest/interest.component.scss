@@ -1,0 +1,11 @@
+.interest {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+  gap: 20px;
+}
+
+h4 {
+  font-weight: 400;
+  margin-top: 5px;
+  margin-bottom: 1.25rem;
+}

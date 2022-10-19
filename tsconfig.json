@@ -1,7 +1,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": "./src",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
@@ -14,6 +14,12 @@
     "typeRoots": [
       "node_modules/@types"
     ],
+    "paths": {
+        "@app/*": ["app/*"],
+        "@assets/*": ["app/src/assets/*"],
+        "@icons/*": ["app/src/assets/icons/*"],
+        "@constants/*": ["/src/app.constants.ts"],
+    },
     "lib": [
       "es2018",
       "dom"
