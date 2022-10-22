@@ -33,6 +33,8 @@ import { TicTacToeComponent } from './projects/tic-tac-toe/tic-tac-toe.component
 import { TripManagerComponent } from "./projects/trip-manager/trip-manager.component";
 import { WavesModule } from 'ng-uikit-pro-standard';
 import { YashaComponent } from './yasha/yasha.component';
+import { InterestComponent } from './interest/interest.component';
+import { IconComponent } from './ui/icon/icon.component';
 
 @NgModule({
   declarations: [
@@ -55,6 +57,8 @@ import { YashaComponent } from './yasha/yasha.component';
     AlgoliaComponent,
     LyftFormComponent,
     SearchBasedComponent,
+    InterestComponent,
+    IconComponent,
   ],
   imports: [
     FormsModule,

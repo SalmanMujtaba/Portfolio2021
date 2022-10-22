@@ -1,6 +1,7 @@
 <main>
   <app-header></app-header>
   <app-about-me></app-about-me>
+  <app-interest></app-interest>
   <app-projects></app-projects>
   <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
 
@@ -10,24 +11,20 @@
 
     <div class="fixed_collapse" mdbCollapse="isCollapsed" #fixed="bs-collapse">
       <!-- Github -->
-      <a role="button" aria-label="Go to Github" mdbBtn (click)="goToGitHub()" color="git" floating="true" color="black" size="sm"
-        class="waves-light" mdbWavesEffect>
+      <a role="button" aria-label="Go to Github" mdbBtn (click)="goToGitHub()" color="git" floating="true" color="black" size="sm" class="waves-light" mdbWavesEffect>
         <mdb-icon fab icon="github"></mdb-icon>
       </a>
       <!-- LinkedIn -->
-      <a role="button" aria-label="Go to LinkedIn" (click)="goToLinkedIn()" mdbBtn floating="true" color="blue" size="sm" class="waves-light"
-        mdbWavesEffect>
+      <a role="button" aria-label="Go to LinkedIn" (click)="goToLinkedIn()" mdbBtn floating="true" color="blue" size="sm" class="waves-light" mdbWavesEffect>
         <mdb-icon fab icon="linkedin-in"></mdb-icon>
       </a>
       <!-- Facebook -->
-      <a role="button" type="button" aria-label="Go to Facebook" (click)="goToFacebook()" mdbBtn floating="true" size="sm" color="fb"
-        class="waves-light" mdbWavesEffect>
+      <a role="button" type="button" aria-label="Go to Facebook" (click)="goToFacebook()" mdbBtn floating="true" size="sm" color="fb" class="waves-light" mdbWavesEffect>
         <mdb-icon fab icon="facebook-f"></mdb-icon>
       </a>
 
       <!-- Top -->
-      <a type="button" aria-label="Go to the top" role="button" href="#top-section" mdbBtn floating="true" size="sm"
-        color="gplus" class="waves-light" mdbWavesEffect mdbPageScroll [pageScrollDuration]="500">
+      <a type="button" aria-label="Go to the top" role="button" href="#top-section" mdbBtn floating="true" size="sm" color="gplus" class="waves-light" mdbWavesEffect mdbPageScroll [pageScrollDuration]="500">
         <mdb-icon fas icon="arrow-up"></mdb-icon>
       </a>
 
