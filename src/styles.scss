@@ -10,8 +10,22 @@
 @import "~ng-uikit-pro-standard/assets/scss/addons-pro/_timelines-pro.scss";
 @import "~ng-uikit-pro-standard/assets/scss/addons-pro/_timeline-pro.scss";
 @import 'animate.css';
+* {
+  text-rendering: optimizeLegibility;
+}
+
+$background-color-light-blue: #CCE4FF;
+.bg-light-blue {
+  background-color: $background-color-light-blue;
+}
+
 .link-color {
   color: $link-color;
+}
+
+p {
+  line-height: 1.875rem;
+  font-size: 1.25rem;
 }
 
 .top-nav-collapse {
