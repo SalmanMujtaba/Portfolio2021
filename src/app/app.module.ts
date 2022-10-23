@@ -1,10 +1,18 @@
+import {
+  ButtonsModule,
+  CardsModule,
+  CarouselModule,
+  CollapseModule,
+  IconsModule,
+  InputUtilitiesModule,
+  InputsModule,
+  MDBSpinningPreloader,
+  NavbarModule,
+  TooltipModule,
+  WavesModule
+} from "ng-uikit-pro-standard";
 import { CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA, NgModule } from "@angular/core";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
-import {
-  MDBBootstrapModulesPro,
-  MDBSpinningPreloader,
-  ToastModule
-} from "ng-uikit-pro-standard";
 
 import { AboutMeComponent } from "./about-me/about-me.component";
 import { AlgoliaComponent } from './projects/algolia/algolia.component';
@@ -19,6 +27,8 @@ import { GoogleMapsModule } from '@angular/google-maps';
 import { HeaderComponent } from "./header/header.component";
 // import { SmoothscrollModule, WavesModule } from 'ng-uikit-pro-standard'
 import { HttpClientModule } from "@angular/common/http";
+import { IconComponent } from './ui/icon/icon.component';
+import { InterestComponent } from './interest/interest.component';
 import { LyftFormComponent } from './projects/lyft-form/lyft-form.component';
 import { LyricsAppComponent } from "./projects/lyrics-app/lyrics-app.component";
 import { NodeChatAppComponent } from "./projects/node-chat-app/node-chat-app.component";
@@ -31,10 +41,7 @@ import { StoriesComponent } from './stories/stories.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { TicTacToeComponent } from './projects/tic-tac-toe/tic-tac-toe.component';
 import { TripManagerComponent } from "./projects/trip-manager/trip-manager.component";
-import { WavesModule } from 'ng-uikit-pro-standard';
 import { YashaComponent } from './yasha/yasha.component';
-import { InterestComponent } from './interest/interest.component';
-import { IconComponent } from './ui/icon/icon.component';
 
 @NgModule({
   declarations: [
@@ -68,9 +75,16 @@ import { IconComponent } from './ui/icon/icon.component';
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
-    ToastModule.forRoot(),
-    WavesModule,
-    MDBBootstrapModulesPro.forRoot(),
+    ButtonsModule,
+    CardsModule,
+    CarouselModule.forRoot(),
+    CollapseModule.forRoot(),
+    IconsModule,
+    InputsModule.forRoot(),
+    InputUtilitiesModule,
+    NavbarModule,
+    TooltipModule.forRoot(),
+    WavesModule.forRoot(),
     GoogleMapsModule,
   ],
   providers: [MDBSpinningPreloader, Redirect, ContactService],
