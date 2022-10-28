@@ -37,6 +37,10 @@
 
 .typewriter-animation {
   animation: typewriter 4s steps(15) 1s 1 normal both, blinkCursor 500ms steps(15) infinite normal;
+  @media (max-width: 576px) {
+    margin-inline: auto;
+    margin-bottom: 0.625rem;
+  }
 }
 
 @keyframes typewriter {
