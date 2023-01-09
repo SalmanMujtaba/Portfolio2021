@@ -25,10 +25,12 @@ p {
 
 .top-nav-collapse {
   background-color: #243a51 !important;
+  max-height: 4.4063rem;
 }
 
 .navbar:not(.top-nav-collapse) {
   background: transparent !important;
+  max-height: 3.5313rem;
 }
 
 @media (max-width: 768px) {
