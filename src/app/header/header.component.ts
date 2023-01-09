@@ -11,19 +11,9 @@ export class HeaderComponent implements AfterViewInit {
   constructor(@Inject(DOCUMENT) private document: Document) { }
 
   ngAfterViewInit(): void {
-    let navbar = document.getElementById("navbarCollapse") as HTMLElement;
+    let navbar = document.getElementsByClassName("navbar-collapse")[0] as HTMLElement;
     if (navbar) {
-      navbar.style.height = "0px";
+      navbar.classList.add("collapse");
     }
-
-    document.getElementsByClassName("navbar-toggler")[0]?.addEventListener("click", (event) => {
-      if (navbar?.style?.height !== '0px') {
-        setTimeout(() => {
-          navbar.style.display = "none";
-        }, 301);
-      } else {
-        navbar.style.display = "unset";
-      }
-    });
   }
 }
