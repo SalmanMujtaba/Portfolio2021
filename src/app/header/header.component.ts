@@ -8,12 +8,26 @@ import { AfterViewInit, ChangeDetectionStrategy, Component, Inject } from "@angu
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HeaderComponent implements AfterViewInit {
+  isExpanded: boolean;
   constructor(@Inject(DOCUMENT) private document: Document) { }
 
   ngAfterViewInit(): void {
-    let navbar = document.getElementsByClassName("navbar-collapse")[0] as HTMLElement;
-    if (navbar) {
-      navbar.classList.add("collapse");
+    // Fix for expanded navbar (by default) in mobile.
+    const fontLinks = Array.from(this.document.getElementsByClassName("font-links") as HTMLCollectionOf<HTMLElement>);
+    if (fontLinks[0].parentElement.style.height === '0px') {
+      fontLinks[0].style.visibility = 'hidden';
     }
+    const hamButton = this.document.querySelector('[aria-label="Toggle navigation"]');
+    hamButton.addEventListener('click', (e) => {
+      this.isExpanded = !this.isExpanded;
+      if (this.isExpanded) {
+        fontLinks[0].style.visibility = 'unset';
+      } else {
+        fontLinks[0].style.visibility = 'hidden';
+
+
+      }
+    });
+
   }
 }
