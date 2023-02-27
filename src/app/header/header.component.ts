@@ -14,7 +14,7 @@ export class HeaderComponent implements AfterViewInit {
   ngAfterViewInit(): void {
     // Fix for expanded navbar (by default) in mobile.
     const fontLinks = Array.from(this.document.getElementsByClassName("font-links") as HTMLCollectionOf<HTMLElement>);
-    if (fontLinks[0].parentElement.style.height === '0px') {
+    if (fontLinks[0]?.parentElement?.style?.height === '0px' || window.getComputedStyle(fontLinks[0]?.parentElement)?.getPropertyValue('height') === '0px') {
       fontLinks[0].style.visibility = 'hidden';
     }
     const hamButton = this.document.querySelector('[aria-label="Toggle navigation"]');
@@ -24,8 +24,6 @@ export class HeaderComponent implements AfterViewInit {
         fontLinks[0].style.visibility = 'unset';
       } else {
         fontLinks[0].style.visibility = 'hidden';
-
-
       }
     });
 
