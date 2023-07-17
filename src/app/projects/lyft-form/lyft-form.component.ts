@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component } from '@angular/core';
 import { Redirect } from './../../../services/redirect.service';
 
 @Component({
@@ -7,11 +6,9 @@ import { Redirect } from './../../../services/redirect.service';
   templateUrl: './lyft-form.component.html',
   styleUrls: ['./lyft-form.component.scss']
 })
-export class LyftFormComponent implements OnInit {
+export class LyftFormComponent {
 
   constructor(public redirect: Redirect) {
-  }
-  ngOnInit(): void {
   }
 
 }

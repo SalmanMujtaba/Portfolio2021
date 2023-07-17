@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component } from "@angular/core";
 import { Redirect } from "./../../../services/redirect.service";
 
 @Component({
@@ -6,12 +6,11 @@ import { Redirect } from "./../../../services/redirect.service";
   templateUrl: "./spark-streaming.component.html",
   styleUrls: ["./spark-streaming.component.scss"],
 })
-export class SparkStreamingComponent implements OnInit {
-  constructor(private redirects: Redirect) {}
+export class SparkStreamingComponent {
+  constructor(private redirects: Redirect) { }
 
   goToGithub(): void {
     this.redirects.goToSparkStreaming();
   }
 
-  ngOnInit() {}
 }

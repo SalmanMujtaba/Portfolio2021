@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, OnInit } from "@angular/core";
+import { ChangeDetectionStrategy, Component } from "@angular/core";
 
 @Component({
   selector: "[app-expensify]",
@@ -6,8 +6,7 @@ import { ChangeDetectionStrategy, Component, OnInit } from "@angular/core";
   styleUrls: ["./expensify.component.scss"],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ExpensifyComponent implements OnInit {
-  constructor() {}
+export class ExpensifyComponent {
+  constructor() { }
 
-  ngOnInit(): void {}
 }

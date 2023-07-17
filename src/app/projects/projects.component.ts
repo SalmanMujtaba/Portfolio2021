@@ -1,15 +1,16 @@
-import { ChangeDetectionStrategy, Component, OnInit } from "@angular/core";
+import { ChangeDetectionStrategy, Component } from "@angular/core";
+
 import { Redirect } from "./../../services/redirect.service";
+
 @Component({
   selector: "app-projects",
   templateUrl: "./projects.component.html",
   styleUrls: ["./projects.component.scss"],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ProjectsComponent implements OnInit {
-  constructor(private redirects: Redirect) {}
+export class ProjectsComponent {
+  constructor(private redirects: Redirect) { }
 
-  ngOnInit() {}
 
   goToExpenseApp() {
     this.redirects.goToExpensifyApp();

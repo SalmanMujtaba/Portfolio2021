@@ -1,4 +1,5 @@
-import { ChangeDetectionStrategy, Component, OnInit } from "@angular/core";
+import { ChangeDetectionStrategy, Component } from "@angular/core";
+
 import { Redirect } from "./../../services/redirect.service";
 
 @Component({
@@ -7,8 +8,8 @@ import { Redirect } from "./../../services/redirect.service";
   styleUrls: ["./footer.component.scss"],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class FooterComponent implements OnInit {
-  constructor(private redirects: Redirect) {}
+export class FooterComponent {
+  constructor(private redirects: Redirect) { }
 
   goToGithub(): void {
     this.redirects.goToGithub();
@@ -26,5 +27,4 @@ export class FooterComponent implements OnInit {
     this.redirects.goToTwitter();
   }
 
-  ngOnInit() { }
 }

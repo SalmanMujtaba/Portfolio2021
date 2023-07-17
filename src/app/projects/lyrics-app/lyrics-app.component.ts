@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, OnInit } from "@angular/core";
+import { ChangeDetectionStrategy, Component } from "@angular/core";
 
 @Component({
   selector: "[app-lyrics]",
@@ -6,8 +6,7 @@ import { ChangeDetectionStrategy, Component, OnInit } from "@angular/core";
   styleUrls: ["./lyrics-app.component.scss"],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class LyricsAppComponent implements OnInit {
-  constructor() {}
+export class LyricsAppComponent {
+  constructor() { }
 
-  ngOnInit(): void {}
 }

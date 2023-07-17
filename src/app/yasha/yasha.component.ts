@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-yasha',
   templateUrl: './yasha.component.html',
   styleUrls: ['./yasha.component.scss']
 })
-export class YashaComponent implements OnInit {
+export class YashaComponent {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
 
 }

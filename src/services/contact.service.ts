@@ -5,7 +5,7 @@ import { Injectable } from "@angular/core";
   providedIn: "root",
 })
 export class ContactService {
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
   sendMessage(form) {
     let formData = new FormData();
@@ -17,15 +17,24 @@ export class ContactService {
         "https://script.google.com/macros/s/AKfycbwc5fmX5rWVmdina3Jr6A56jlvcZ5sBanS0T80G/exec",
         formData
       )
-      .subscribe(
-        (response) => {
-          // choose the response message
-          if (response["result"] == "success") {
+      .subscribe({
+        complete: () => { }, // completeHandler
+        error: (error) => { console.log(error); },    // errorHandler 
+        next: (response) => {
+          if (response['result'] === 'success') {
+
           }
-        },
-        (error) => {
-          console.log(error);
-        }
+        }    // nextHandler
+      }
+
+        // (response) => {
+        //   // choose the response message
+        //   if (response["result"] == "success") {
+        //   }
+        // },
+        // (error) => {
+        //   console.log(error);
+        // }
       );
   }
 }

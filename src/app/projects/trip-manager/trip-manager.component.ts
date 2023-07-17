@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, OnInit } from "@angular/core";
+import { ChangeDetectionStrategy, Component } from "@angular/core";
 
 @Component({
   selector: "[app-tripmanager]",
@@ -6,8 +6,7 @@ import { ChangeDetectionStrategy, Component, OnInit } from "@angular/core";
   styleUrls: ["./trip-manager.component.scss"],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class TripManagerComponent implements OnInit {
-  constructor() {}
+export class TripManagerComponent {
+  constructor() { }
 
-  ngOnInit() {}
 }
