@@ -59,8 +59,9 @@ export class ContactFormComponent implements OnInit {
 
   }
 
-  onSubmit() {
+  sendEmail($event) {
     if (this.FormData.valid) {
+      this.contactService.sendEmail($event);
       this.showProgressBar = true;
       setTimeout(() => {
         this.entryText = false;
@@ -70,7 +71,6 @@ export class ContactFormComponent implements OnInit {
         this.FormData.reset();
         this.showProgressBar = false;
       }, 2000);
-      this.contactService.sendMessage(this.FormData);
     }
   }
 
