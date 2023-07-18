@@ -1,6 +1,17 @@
-# NgUikitProStandard
+# Salman Mujtaba's Portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
+This project was generated using Angular CLI version 13.3.9. Initially started with Angular 8.x.x, I've diligently updated it to its current state. Through this portfolio, I aim to showcase not only my projects but also a glimpse into my life and journey as a developer.
+
+## Portfolio Link
+To explore the various projects and aspects of my life, kindly visit the following [link](https://www.salmanmujtaba.com)
+
+## Deployment
+The portfolio is successfully deployed on Vercel, ensuring seamless accessibility and smooth user experience.
+
+Thank you for taking the time to visit my portfolio! Feel free to reach out if you have any questions or would like to discuss potential collaborations. Your feedback and suggestions are greatly appreciated.
+
+## Linting
+The project has linting enabled, ensuring consistent code quality and adherence to best practices.
 
 ## Development server
 
@@ -14,14 +25,5 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
