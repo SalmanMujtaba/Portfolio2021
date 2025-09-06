@@ -42,6 +42,7 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { TicTacToeComponent } from './projects/tic-tac-toe/tic-tac-toe.component';
 import { TripManagerComponent } from "./projects/trip-manager/trip-manager.component";
 import { YashaComponent } from './yasha/yasha.component';
+import { PicklebookComponent } from "./projects/picklebook/picklebook.component";
 
 @NgModule({
   declarations: [
@@ -66,6 +67,7 @@ import { YashaComponent } from './yasha/yasha.component';
     SearchBasedComponent,
     InterestComponent,
     IconComponent,
+    PicklebookComponent
   ],
   imports: [
     FormsModule,

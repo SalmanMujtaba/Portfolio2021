@@ -81,4 +81,8 @@ export class Redirect {
   goToLyftForm() {
     window.open("https://someform.vercel.app", "_blank");
   }
+
+  goToPicklebook() {
+    window.open("https://pickleballbooking.vercel.app", "_blank");
+  }
 }

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-algolia',
+  selector: '[app-algolia]',
   templateUrl: './algolia.component.html',
   styleUrls: ['./algolia.component.scss']
 })

@@ -82,7 +82,7 @@
             <mdb-card-title>
               <h4 class="card-title my-4">
                 <strong>
-                  Search Related Projects</strong>
+                  Other Search Related Projects</strong>
               </h4>
             </mdb-card-title>
             <!--Description-->
@@ -250,7 +250,7 @@
 
           <!--Card image-->
           <div class="view view-cascade overlay waves-light" mdbWavesEffect>
-            <mdb-card-img src="/assets/images/construction.webp" alt="coming up"></mdb-card-img>
+            <mdb-card-img src="/assets/images/admin-2.webp" alt="picklebbook"></mdb-card-img>
             <a href="JavaScript:Void(0);">
               <div class="mask waves-effect waves-light"></div>
             </a>
@@ -261,26 +261,26 @@
           <mdb-card-body cascade="true" class="text-center no-padding">
             <!--Category & Title-->
             <a href="JavaScript:Void(0);" class="text-muted">
-              <h5>Under Construction</h5>
+              <h5>Picklebook</h5>
             </a>
             <mdb-card-title>
               <h4 class="card-title my-4">
                 <strong>
-                  Coming Soon </strong>
+                  A court booking system </strong>
               </h4>
             </mdb-card-title>
 
             <!--Description-->
             <mdb-card-text>
-              Watch this space for some more exciting stuff!
+              Helps people sign up for courts!
             </mdb-card-text>
             <!--Card footer-->
             <div class="card-footer">
-              <span class="right">
-                <!--<a href="#top-section" -->
-                <p class="indigo-text">We'll be back</p>
-                <!--</a>-->
-              </span>
+              <a href="#picklebook" mdbPageScroll [pageScrollOffset]="200" [pageScrollSpeed]="2500"><button claas="text-center" mdbBtn
+                  type="button" color="git" gradient="blue" size="sm" rounded="true" mdbWavesEffect>View More</button> <a
+                  type="button" (click)="goToPicklebook()" placement="bottom" class="icons-sm mr-8 git-ic">
+                </a>
+              </a>
             </div>
 
           </mdb-card-body>
@@ -575,13 +575,13 @@
 <!--Section: Products v.5-->
 <!--</div>-->
 <hr class="container">
+<div id="picklebook" class="wow animate__fadeInUp animate__animated" data-wow-delay="0.2s" app-picklebook></div>
 <div id="algolia" class="wow animate__fadeInUp animate__animated" data-wow-delay="0.2s" app-algolia></div>
 <div id="search" class="wow animate__fadeInUp animate__animated" data-wow-delay="0.2s" app-search-based></div>
 <div id="lyft" class="wow animate__fadeInUp animate__animated" data-wow-delay="0.2s" app-lyft-form></div>
 <div id="tictactoe" class="wow animate__fadeInUp animate__animated" data-wow-delay="0.2s" app-tic-tac-toe></div>
 <!-- <div id="recipe" class="wow animate__fadeInUp animate__animated" data-wow-delay="0.2s" app-recipeingredient></div>
 <div id="spark" class="wow animate__fadeInUp animate__animated" data-wow-delay="0.2s" app-sparkstreaming></div>
-<div id="android" class="wow animate__fadeInUp animate__animated" data-wow-delay="0.2s" app-tripmanager></div> -->
 <!-- <div id="chat" class="wow animate__fadeInUp animate__animated" data-wow-delay="0.2s" app-node-chat-app></div> -->
 <!-- <div id="graph" class="wow animate__fadeInUp animate__animated" data-wow-delay="0.2s" app-lyrics></div>
 <div id="expense" class="wow animate__fadeInUp animate__animated" data-wow-delay="0.2s" app-expensify></div> -->

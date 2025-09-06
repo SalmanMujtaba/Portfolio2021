@@ -43,4 +43,8 @@ export class ProjectsComponent {
   goToChatApp() {
     this.redirects.goToNodeChatApp();
   }
+
+  goToPicklebook() {
+    this.redirects.goToPicklebook();
+  }
 }
